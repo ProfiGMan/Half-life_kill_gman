@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61799848506815366}
   - component: {fileID: 50789968314460624}
   - component: {fileID: 114086437664957878}
+  - component: {fileID: 114983236289927560}
   m_Layer: 10
   m_Name: zombie
   m_TagString: Untagged
@@ -111,6 +112,24 @@ MonoBehaviour:
   collisionCount: 0
   health: 10
   animator: {fileID: 0}
+--- !u!114 &114983236289927560
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1779690105417662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5ac6d84dca7648fab1a3a905dbc55b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsDeserializing: 0
+  _id: aff47165-a720-4523-b34d-189273fb84c1
+  classId: bf1d4561-c197-4f9f-88aa-7d99d25ae509
+  StoreAllComponents: 0
+  Components:
+  - UnityEngine.Transform
+  - UnityEngine.SpriteRenderer
 --- !u!212 &212322000456173190
 SpriteRenderer:
   m_ObjectHideFlags: 1

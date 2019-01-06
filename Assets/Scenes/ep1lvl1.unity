@@ -177,6 +177,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4224030153113928, guid: 4915edf53ef364cdd8e55efb835cc7f8,
     type: 2}
   m_PrefabInternal: {fileID: 1057491622}
+--- !u!1 &221787906 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1779690105417662, guid: b979927a2cb3e489ebe907ae5604d6f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 298737444}
 --- !u!1001 &298737444
 Prefab:
   m_ObjectHideFlags: 0
@@ -229,6 +234,11 @@ Prefab:
       propertyPath: target
       value: 
       objectReference: {fileID: 169231490}
+    - target: {fileID: 114983236289927560, guid: b979927a2cb3e489ebe907ae5604d6f1,
+        type: 2}
+      propertyPath: _id
+      value: 2676d9dc-33b1-487e-aae4-426066af3f34
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b979927a2cb3e489ebe907ae5604d6f1, type: 2}
   m_IsPrefabAsset: 0
@@ -462,7 +472,7 @@ Prefab:
     - target: {fileID: 114325371934265672, guid: 4915edf53ef364cdd8e55efb835cc7f8,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114367904613808626, guid: 4915edf53ef364cdd8e55efb835cc7f8,
         type: 2}
@@ -4198,6 +4208,7 @@ GameObject:
   - component: {fileID: 1587021740}
   - component: {fileID: 1587021742}
   - component: {fileID: 1587021741}
+  - component: {fileID: 1587021744}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4292,6 +4303,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1587021744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1587021739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd6fd92df3c974ed690d61989eb183ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsDeserializing: 0
+  _id: 5b3bc1fa-b360-416c-8489-3a3eb8f2ccae
+  classId: 3d8e696c-b48a-42c3-9f7a-f0aac4e6f52a
+  StoreAllComponents: 0
+  Components:
+  - UnityEngine.Transform
+  - UnityEngine.Camera
+  - UnityEngine.AudioListener
 --- !u!1 &1629246516
 GameObject:
   m_ObjectHideFlags: 0
@@ -4445,6 +4475,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1638872678671154, guid: da360fa2215fd49ac983c155c51e53f1,
     type: 2}
   m_PrefabInternal: {fileID: 1921984673}
+--- !u!1 &1958072864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1779690105417662, guid: b979927a2cb3e489ebe907ae5604d6f1,
+    type: 2}
+  m_PrefabInternal: {fileID: 1562214879}
 --- !u!1 &2011927739
 GameObject:
   m_ObjectHideFlags: 0
@@ -4484,4 +4519,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7debdd6cf0c58417c8b76cf5f31b1c12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  entries: []
+  entries:
+  - gameObject: {fileID: 1958072864}
+    Id: aff47165-a720-4523-b34d-189273fb84c1
+  - gameObject: {fileID: 221787906}
+    Id: 2676d9dc-33b1-487e-aae4-426066af3f34
+  - gameObject: {fileID: 1587021739}
+    Id: 5b3bc1fa-b360-416c-8489-3a3eb8f2ccae

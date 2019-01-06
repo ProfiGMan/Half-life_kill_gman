@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212378430692785284}
   - component: {fileID: 114257669263076480}
   - component: {fileID: 114664963970460970}
+  - component: {fileID: 114808793574743274}
   m_Layer: 0
   m_Name: medic_system
   m_TagString: Untagged
@@ -69,6 +70,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   waiting: 0
+--- !u!114 &114808793574743274
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1776848431158192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5ac6d84dca7648fab1a3a905dbc55b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsDeserializing: 0
+  _id: 11129a2f-270a-499b-beb5-2bd3dcd3c8b5
+  classId: 7b8084d7-2b10-431d-86f3-91896d470d53
+  StoreAllComponents: 1
+  Components: []
 --- !u!212 &212378430692785284
 SpriteRenderer:
   m_ObjectHideFlags: 1

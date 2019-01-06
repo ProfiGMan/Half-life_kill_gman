@@ -23,7 +23,7 @@ public class HealthSystem : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Health.getCurrentHealth() >= 100 || waiter.waiting) return;
-		if(Input.GetButton("Use"))
+		if(Input.GetButton("Use") && amountOfHealth > 0)
 		{
 			var dif = Player.position - transform.position;
 			if(dif.x < range && dif.x > -range &&
@@ -37,7 +37,6 @@ public class HealthSystem : MonoBehaviour {
 		if(amountOfHealth <= 0) 
 		{
 			spriteRenderer.sprite = EmptySprite;
-			Destroy(this);
 		}
 	}
 }

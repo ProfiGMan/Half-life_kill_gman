@@ -157,8 +157,12 @@ MonoBehaviour:
   IsDeserializing: 0
   _id: 
   classId: 4ca1aa22-31ae-44c1-a256-42c378fd83e7
-  StoreAllComponents: 1
-  Components: []
+  StoreAllComponents: 0
+  Components:
+  - UnityEngine.Transform
+  - UnityEngine.SpriteRenderer
+  - UnityEngine.CircleCollider2D
+  - UnityEngine.BoxCollider2D
 --- !u!114 &114989483063830856
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -173,8 +177,12 @@ MonoBehaviour:
   IsDeserializing: 0
   _id: 
   classId: afe4fe70-22ad-49c3-a54b-f50902befe2c
-  StoreAllComponents: 1
-  Components: []
+  StoreAllComponents: 0
+  Components:
+  - UnityEngine.Transform
+  - UnityEngine.SpriteRenderer
+  - UnityEngine.CircleCollider2D
+  - UnityEngine.BoxCollider2D
 --- !u!212 &212381817890210896
 SpriteRenderer:
   m_ObjectHideFlags: 1

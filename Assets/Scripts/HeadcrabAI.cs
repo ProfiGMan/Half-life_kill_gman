@@ -23,7 +23,7 @@ public class HeadcrabAI : EnemyAI {
 		{
 			rb.AddForce(new Vector3(xVal, 260, 100));
 			float dist = transform.position.x - target.position.x;
-			transform.Rotate (Vector3.back * -getRotation());
+			transform.eulerAngles = new Vector3(0, 0, getRotation());;
 			animator.SetBool("jumping", true);
 			StartCoroutine(Wait());
 			attacking = true;
@@ -41,7 +41,7 @@ public class HeadcrabAI : EnemyAI {
 			attacking = false;
 			if(lastCollision.transform == target) 
 				target.GetComponent<Health>().takeDamage(10);
-			transform.Rotate (Vector3.back * getRotation());
+			transform.eulerAngles = new Vector3(0, 0, 0);
 			animator.SetBool("jumping", false);
 		}
 	}

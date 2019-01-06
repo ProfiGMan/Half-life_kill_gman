@@ -25,8 +25,8 @@ GameObject:
   - component: {fileID: 114743546903739206}
   - component: {fileID: 114890582271422412}
   - component: {fileID: 95949970293357108}
-  - component: {fileID: 114560631337615788}
   - component: {fileID: 114048707170827462}
+  - component: {fileID: 114421657487559740}
   m_Layer: 10
   m_Name: headcrab
   m_TagString: npc
@@ -122,11 +122,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 43502e45-4f21-4a63-944d-22fc0a00da9a
+  _id: 74076067-0995-4fa0-8ff0-4e49a27bd834
   classId: 4e98ebf8-69af-4a60-a4bb-c6f726526418
-  StoreAllComponents: 1
-  Components: []
---- !u!114 &114560631337615788
+  StoreAllComponents: 0
+  Components:
+  - UnityEngine.Transform
+  - UnityEngine.SpriteRenderer
+--- !u!114 &114421657487559740
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
