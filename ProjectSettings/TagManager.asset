@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - npc
+  - deadNpc
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Player
+  - game
+  - npc
+  - weapon
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 3122716319
+    locked: 0
+  - name: Game
+    uniqueID: 2984695353
+    locked: 0
+  - name: npc
+    uniqueID: 4128369531
+    locked: 0
+  - name: Player
+    uniqueID: 3758041279
+    locked: 0
+  - name: UI
+    uniqueID: 846170847
+    locked: 0
