@@ -2725,7 +2725,7 @@ public class ProvideColliderAttributes : ProvideAttributes {
 
 [AttributeListProvider(typeof(Renderer))]
 [AttributeListProvider(typeof(AudioListener))]
-[AttributeListProvider(typeof(ParticleEmitter))]
+[AttributeListProvider(typeof(ParticleSystem))]
 [AttributeListProvider(typeof(Cloth))]
 [AttributeListProvider(typeof(Light))]
 [AttributeListProvider(typeof(Joint))]

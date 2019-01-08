@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour {
 	public Animator animator;
 
 	public float runSpeed = 40f;
+	public VirtualJoystick joystick;
 
 	float horizontalMove = 0f;
 	bool jump = false;
@@ -28,6 +29,10 @@ public class PlayerMovement : MonoBehaviour {
 		if(Time.timeScale == 0) return;
 
 		horizontalMove = Input.GetAxisRaw("Horizontal") * runSpeed;
+		if(joystick.InputDirection.x > 0.2f) horizontalMove =
+			runSpeed;
+		else if(joystick.InputDirection.x < -0.2f) horizontalMove =
+			-runSpeed;
 
 		// if((Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.LeftShift)) &&
 		// (Input.GetButtonDown("Horizontal") || Input.GetButtonUp("Horizontal")) &&
@@ -37,11 +42,13 @@ public class PlayerMovement : MonoBehaviour {
 		// 	Debug.Log("long jump");
 		// }
 		// else 
-		if (Input.GetButtonDown("Jump") && !waiter.waiting)
+		if ((TouchControls.isJumping || Input.GetButtonDown("Jump")) && !waiter.waiting)
 		{
 			waiter.wait(0.05f);
-			jump = true;
-			animator.SetBool("IsJumping", true);
+			TouchControls.isJumping = false;
+			// jump = true;
+			// animator.SetBool("IsJumping", true);
+			Jump();
 		}
 
 		if (Input.GetButtonDown("Crouch"))
@@ -72,5 +79,11 @@ public class PlayerMovement : MonoBehaviour {
 				animator.SetBool("IsJumping", false);
 			}
 		}
+	}
+
+	public void Jump()
+	{
+		controller.Move(0, crouch, true);
+		animator.SetBool("IsJumping", true);
 	}
 }

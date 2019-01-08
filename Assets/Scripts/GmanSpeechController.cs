@@ -10,7 +10,7 @@ public class GmanSpeechController : MonoBehaviour {
 	string[] lines;
 	int lineIndex = 0;
 
-	void next()
+	public void next()
 	{
 		if(lines.Length == lineIndex + 1)
 		{

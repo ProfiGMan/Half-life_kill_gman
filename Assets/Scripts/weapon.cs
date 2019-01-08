@@ -24,7 +24,7 @@ public class weapon : MonoBehaviour {
 		{
 			Instantiate(Handed, Player);
 			this.gameObject.SetActive(false);
-			Destroy(this);
+			Destroy(this.gameObject, 2f);
 			//Destroy(thisWhole);
 		}
 	}

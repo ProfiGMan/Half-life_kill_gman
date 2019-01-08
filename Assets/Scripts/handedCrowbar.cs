@@ -19,7 +19,8 @@ public class handedCrowbar : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		if(Input.GetButton("Fire1") && !waiter.waiting)
+		if(((Input.GetButton("Fire1") && Input.touchCount == 0) || TouchControls.isFiring) 
+		&& !waiter.waiting)
 		{
 			if(firingToRight)
 			{
@@ -42,7 +43,7 @@ public class handedCrowbar : MonoBehaviour {
 			}
 			waiter.wait(0.1f);
 		}
-		if(Input.GetButtonUp("Fire1"))
+		if(Input.GetButtonUp("Fire1") || !TouchControls.isFiring)
 		{
 			Vector3 currentAngles = transform.eulerAngles;
 			currentAngles.z = 0;
