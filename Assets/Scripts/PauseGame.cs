@@ -36,30 +36,19 @@ public class PauseGame : MonoBehaviour {
 		Time.timeScale = 1f;
 	}
 
-	public void load()
-	{
-		Spawn.loadWhenSpawn = true;
-		Spawn.loadData = Saving.chosenSavingData;
-		Debug.Log(Saving.chosenSavingName.Split(' ')[2]);
-		SceneManager.LoadScene(Saving.chosenSavingName.Split(' ')[2]);
-	}
-
-	public void save()
-	{
-		LevelSerializer.SaveGame("autosave");
-	}
-
 	public void loadScrollUpdate()
 	{
+		Debug.Log("loadint saves list");
 		foreach (Transform child in scrollLoadContent.transform)
 		{
 			Destroy(child.gameObject);
 		}
 		foreach (LevelSerializer.SaveEntry sg in LevelSerializer.SavedGames[LevelSerializer.PlayerName]) {
-            GameObject _saving = Instantiate(saving, scrollLoadContent.transform);
+            Debug.Log(sg.Caption);
+			GameObject _saving = Instantiate(saving, scrollLoadContent.transform);
 			_saving.GetComponentInChildren<TextMeshProUGUI>().
 				SetText(" " + sg.Caption);
-			_saving.GetComponent<Saving>().data = sg.Data;
+			_saving.GetComponent<Saving>().saveEntry = sg;
         }
 	}
 

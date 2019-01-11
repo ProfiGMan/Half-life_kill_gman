@@ -7,7 +7,7 @@ public class Spawn : MonoBehaviour {
 	public GameObject spawn;
 	public bool spawnAtSpawnPoint = false;
 	public static bool loadWhenSpawn = false;
-	public static string loadData;
+	public static LevelSerializer.SaveEntry loadEntry;
 
 	// Use this for initialization
 	void Start () {
@@ -15,8 +15,8 @@ public class Spawn : MonoBehaviour {
 		if(loadWhenSpawn)
 		{
 			loadWhenSpawn = false;
-			if(loadData == null) Debug.LogError("loadData is not intialized");
-			else LevelSerializer.LoadNow(loadData);
+			if(loadEntry == null) Debug.LogError("loadEntry is not intialized");
+			else LevelSerializer.LoadNow(loadEntry.Data);
 		}
 	}
 	

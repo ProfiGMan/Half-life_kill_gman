@@ -19,7 +19,7 @@ public class handedCrowbar : MonoBehaviour {
 
 	void FixedUpdate()
 	{
-		if(((Input.GetButton("Fire1") && Input.touchCount == 0) || TouchControls.isFiring) 
+		if(Input.GetButton("Fire1") // && Input.touchCount <= 1) || TouchControls.isFiring
 		&& !waiter.waiting)
 		{
 			if(firingToRight)

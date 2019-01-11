@@ -26,7 +26,6 @@ public class Health : MonoBehaviour {
 		{
 			takeDamage(currentHealth - startHealth);
 		}
-		Respawn.lastSceneBeginHealth = currentHealth;
 	}
 
 	void Update()
@@ -44,7 +43,6 @@ public class Health : MonoBehaviour {
 		healthText.GetComponent<TextMeshProUGUI>().SetText(currentHealth.ToString() + "%");
 		if(currentHealth <= 0)
 		{
-			Respawn.respawnSceneIndex = SceneManager.GetActiveScene().buildIndex;
 			SceneManager.LoadScene("onDeapth");
 		}
 	}

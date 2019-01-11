@@ -63,7 +63,10 @@ public class PlayerMovement : MonoBehaviour {
 
 	void FixedUpdate ()
 	{
-		animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
+		var absSpeed = 
+			Mathf.RoundToInt(Mathf.Abs(GetComponent<Rigidbody2D>().velocity.x));
+		if(horizontalMove < 0.2 && horizontalMove > -0.2) absSpeed = 0;
+		animator.SetFloat("Speed", absSpeed);
 		// Move our character
 		controller.Move(horizontalMove * Time.fixedDeltaTime, crouch, jump);
 		jump = false;

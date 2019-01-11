@@ -33,7 +33,6 @@ public class ChangeLevelTrigger : MonoBehaviour {
 			dieTriggers[i].transform.position.y + range && transform.position.y > 
 			dieTriggers[i].transform.position.y - range && dieHorizontal[i]))
 			{
-				Respawn.respawnSceneIndex = SceneManager.GetActiveScene().buildIndex;
 				SceneManager.LoadScene("onDeapth");
 				return;
 			}
@@ -51,7 +50,7 @@ public class ChangeLevelTrigger : MonoBehaviour {
 				int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
 				SceneManager.LoadScene(nextScene);
 				if(saveGameTrigger) 
-					SaveLoadGame.save(SceneManager.GetSceneByBuildIndex(nextScene).name);
+					SaveLoadGame.save("checkpoint");
 				return;
 			}
 		}

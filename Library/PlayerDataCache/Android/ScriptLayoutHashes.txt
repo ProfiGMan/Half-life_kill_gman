@@ -243,12 +243,13 @@ c7ec0349c8723fc18934994cd05c0925 Assembly-CSharp-firstpass.dll:.StoreInformation
 2af519f41461cb6c61549af7ec7f8e3d Assembly-CSharp.dll:.Waiter
 e04611b8715e6833d2bd7010fc6be10b Unity.TextMeshPro.dll:TMPro.TMP_StyleSheet
 4cb0e29b54ce663ced88960177cbb53a Assembly-CSharp.dll:.Health
-640df952400c83bc7a62b4aa290f567a Assembly-CSharp.dll:.Saving
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.Saving
 8ce712c004fddf1ebc65ee6757cd994e Assembly-CSharp.dll:TMPro.Examples.TMPro_InstructionOverlay
 486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:TMPro.Examples.TeleType
 58b80cf56079b9b2c86ad9aaede3dca8 Assembly-CSharp.dll:TMPro.Examples.TextMeshProFloatingText
 2f9af06a78208a67db480e9bfed4a076 Unity.TextMeshPro.dll:TMPro.TextMeshPro
 9318334b30e9f195f573b2ce00154b95 Unity.TextMeshPro.dll:TMPro.TMP_ColorGradient
+486cd95c82d8305219c352c06b776e1f Assembly-CSharp.dll:.SaveLoadGame
 d6847627ba7741c18a9d5258fc293648 Assembly-CSharp.dll:TMPro.Examples.VertexShakeA
 dd223b2cbb523615eee8980d99d61ddd Assembly-CSharp.dll:.EnvMapAnimator
 5ef1cd3487822db3b360cd5f849c9c41 Assembly-CSharp.dll:.VirtualJoystick

@@ -31,4 +31,11 @@ public class TouchControls : MonoBehaviour {
 	{
 		isJumping = true;
 	}
+
+	void Start()
+	{
+		#if !UNITY_ANDROID
+		this.gameObject.SetActive(false);
+		#endif
+	}
 }

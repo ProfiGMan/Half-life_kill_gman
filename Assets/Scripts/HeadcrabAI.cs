@@ -22,7 +22,6 @@ public class HeadcrabAI : EnemyAI {
 		if(!GetComponent<Waiter>().waiting) 
 		{
 			rb.AddForce(new Vector3(xVal, 260, 100));
-			float dist = transform.position.x - target.position.x;
 			transform.eulerAngles = new Vector3(0, 0, getRotation());;
 			animator.SetBool("jumping", true);
 			StartCoroutine(Wait());
