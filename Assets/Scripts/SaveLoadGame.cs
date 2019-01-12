@@ -9,11 +9,11 @@ public class SaveLoadGame : MonoBehaviour {
 		Debug.Log("loading");
 		Spawn.loadWhenSpawn = true;
 		Spawn.loadEntry = Saving.chosenSavingEntry;
-		Debug.Log(Saving.chosenSavingEntry.Level);
+		Debug.Log(Saving.chosenSavingEntry.Caption);
 		SceneManager.LoadScene(Saving.chosenSavingEntry.Level);
 	}
 
-	public static void save(string name = "autosave")
+	public static void save(string name = "quicksave")
 	{
 		Debug.Log("saving");
 		LevelSerializer.SaveGame(name);
@@ -21,7 +21,7 @@ public class SaveLoadGame : MonoBehaviour {
 
 	public void loadLast() {
 		var sg = LevelSerializer.SavedGames[LevelSerializer.PlayerName];
-		Saving.chosenSavingEntry = sg[sg.Count - 1];
+		Saving.chosenSavingEntry = sg[0];
 		load();
 	}
 

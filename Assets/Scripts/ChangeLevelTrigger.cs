@@ -48,9 +48,12 @@ public class ChangeLevelTrigger : MonoBehaviour {
 			NextLevelTrigger.transform.position.y - range && HorizontalNextLevelTrigger))
 			{
 				int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
-				SceneManager.LoadScene(nextScene);
 				if(saveGameTrigger) 
-					SaveLoadGame.save("checkpoint");
+				{
+					Spawn.saveWhenSpawn = true;
+					Spawn.saveEntryName = "autosave";
+				}
+				SceneManager.LoadScene(nextScene);
 				return;
 			}
 		}

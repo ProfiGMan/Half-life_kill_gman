@@ -44,7 +44,6 @@ public class PauseGame : MonoBehaviour {
 			Destroy(child.gameObject);
 		}
 		foreach (LevelSerializer.SaveEntry sg in LevelSerializer.SavedGames[LevelSerializer.PlayerName]) {
-            Debug.Log(sg.Caption);
 			GameObject _saving = Instantiate(saving, scrollLoadContent.transform);
 			_saving.GetComponentInChildren<TextMeshProUGUI>().
 				SetText(" " + sg.Caption);

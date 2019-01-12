@@ -15,8 +15,9 @@ public class GmanSpeechController : MonoBehaviour {
 		if(lines.Length == lineIndex + 1)
 		{
 			int nextScene = SceneManager.GetActiveScene().buildIndex + 1;
+			Spawn.saveWhenSpawn = true;
+			Spawn.saveEntryName = "autosave";
 			SceneManager.LoadScene(nextScene);
-			SaveLoadGame.save("checkpoint");
 		}
 		else if(lines.Length != 0)
 		{

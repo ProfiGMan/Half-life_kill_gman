@@ -606,6 +606,11 @@ Prefab:
       propertyPath: joystick
       value: 
       objectReference: {fileID: 146863298}
+    - target: {fileID: 114367904613808626, guid: 4915edf53ef364cdd8e55efb835cc7f8,
+        type: 2}
+      propertyPath: saveGameTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4915edf53ef364cdd8e55efb835cc7f8, type: 2}
   m_IsPrefabAsset: 0

@@ -34,14 +34,14 @@ public class PlayerMovement : MonoBehaviour {
 		else if(joystick.InputDirection.x < -0.2f) horizontalMove =
 			-runSpeed;
 
-		// if((Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.LeftShift)) &&
-		// (Input.GetButtonDown("Horizontal") || Input.GetButtonUp("Horizontal")) &&
-		// Input.GetButtonDown("Jump"))
-		// {
-		// 	longJump = true;
-		// 	Debug.Log("long jump");
-		// }
-		// else 
+		if((Input.GetKey(KeyCode.LeftShift)) &&
+		(Input.GetButton("Horizontal")) &&
+		Input.GetButtonDown("Jump"))
+		{
+			longJump = true;
+			Debug.Log("long jump");
+		}
+		else 
 		if ((TouchControls.isJumping || Input.GetButtonDown("Jump")) && !waiter.waiting)
 		{
 			waiter.wait(0.05f);
