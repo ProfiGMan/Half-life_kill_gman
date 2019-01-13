@@ -21,19 +21,13 @@ public class CameraController : MonoBehaviour {
 
         foreach(GameObject wall in WallsOnLeft)
         {
-            Vector3 screenPoint = 
-                cam.WorldToViewportPoint(wall.transform.position);
-            leftWallSeen = screenPoint.z > 0 && screenPoint.x > 0 && 
-                screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
+            leftWallSeen = isVisible(wall);
             if(leftWallSeen) break;
         }
 
         foreach(GameObject wall in WallsOnRight)
         {
-            Vector3 screenPoint = 
-                cam.WorldToViewportPoint(wall.transform.position);
-            rightWallSeen = screenPoint.z > 0 && screenPoint.x > 0 && 
-                screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
+            rightWallSeen = isVisible(wall);
             if(rightWallSeen) break;
         }
 
@@ -43,23 +37,13 @@ public class CameraController : MonoBehaviour {
         if(Ceiling.Length > 0)
         foreach(GameObject wall in Ceiling)
         {
-            Vector3 screenPoint = 
-                cam.WorldToViewportPoint(wall.transform.position);
-            ceilingSeen = screenPoint.z > 0 && screenPoint.x > 0 && 
-                screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
+            ceilingSeen = isVisible(wall);
             if(ceilingSeen) break;
         }
 
         foreach(GameObject wall in Ground)
         {
-            // Vector3 screenPoint = 
-            //     cam.WorldToViewportPoint(wall.transform.position);
-            // groundSeen = screenPoint.z > 0 && screenPoint.x > 0 && 
-            //     screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
-            // Plane[] planes = GeometryUtility.CalculateFrustumPlanes(cam);
-            // groundSeen = 
-            // GeometryUtility.TestPlanesAABB(planes , GetComponent<Collider>().bounds);
-            groundSeen = isVisible(wall);
+            groundSeen = isGroundVisible(wall);
             if(groundSeen) break;
         }
 
@@ -86,5 +70,24 @@ public class CameraController : MonoBehaviour {
     bool isVisible(GameObject obj)
     {
         return obj.GetComponent<Renderer>().isVisible;
+    }
+
+    bool isGroundVisible(GameObject obj)
+    {
+        if(isVisible(obj))
+        {
+            float rightGroundBorderPos = 
+                obj.transform.position.x + obj.GetComponent<SpriteRenderer>().
+                bounds.size.x / 2;
+            float leftGroundBorderPos = 
+                obj.transform.position.x - obj.GetComponent<SpriteRenderer>().
+                bounds.size.x / 2;
+            if(player.transform.position.x >= leftGroundBorderPos &&
+            player.transform.position.x <= rightGroundBorderPos) 
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }
