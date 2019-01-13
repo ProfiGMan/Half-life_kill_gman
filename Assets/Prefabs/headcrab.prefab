@@ -122,12 +122,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDeserializing: 0
-  _id: 74076067-0995-4fa0-8ff0-4e49a27bd834
+  _id: be821880-2712-4323-a83e-3b213007e7b3
   classId: 4e98ebf8-69af-4a60-a4bb-c6f726526418
   StoreAllComponents: 0
   Components:
-  - UnityEngine.Transform
+  - StoreAnimator
+  - Waiter
+  - HeadcrabAI
   - UnityEngine.SpriteRenderer
+  - UnityEngine.Transform
 --- !u!114 &114421657487559740
 MonoBehaviour:
   m_ObjectHideFlags: 1

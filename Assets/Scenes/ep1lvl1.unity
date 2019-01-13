@@ -4575,55 +4575,50 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1587021740}
-    - target: {fileID: 114084677351461570, guid: da360fa2215fd49ac983c155c51e53f1,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114084677351461570, guid: da360fa2215fd49ac983c155c51e53f1,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114171120267059342, guid: da360fa2215fd49ac983c155c51e53f1,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114171120267059342, guid: da360fa2215fd49ac983c155c51e53f1,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114806716806312178, guid: da360fa2215fd49ac983c155c51e53f1,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114806716806312178, guid: da360fa2215fd49ac983c155c51e53f1,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114614916976462890, guid: da360fa2215fd49ac983c155c51e53f1,
-        type: 2}
-      propertyPath: m_havePropertiesChanged
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114614916976462890, guid: da360fa2215fd49ac983c155c51e53f1,
-        type: 2}
-      propertyPath: m_isInputParsingRequired
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 114111024982398904, guid: da360fa2215fd49ac983c155c51e53f1,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1057491623}
-    - target: {fileID: 114111024982398904, guid: da360fa2215fd49ac983c155c51e53f1,
+    - target: {fileID: 114084677351461570, guid: da360fa2215fd49ac983c155c51e53f1,
         type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Jump
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114084677351461570, guid: da360fa2215fd49ac983c155c51e53f1,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114806716806312178, guid: da360fa2215fd49ac983c155c51e53f1,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114806716806312178, guid: da360fa2215fd49ac983c155c51e53f1,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114614916976462890, guid: da360fa2215fd49ac983c155c51e53f1,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114614916976462890, guid: da360fa2215fd49ac983c155c51e53f1,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114171120267059342, guid: da360fa2215fd49ac983c155c51e53f1,
+        type: 2}
+      propertyPath: m_havePropertiesChanged
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114171120267059342, guid: da360fa2215fd49ac983c155c51e53f1,
+        type: 2}
+      propertyPath: m_isInputParsingRequired
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da360fa2215fd49ac983c155c51e53f1, type: 2}
@@ -4686,3 +4681,5 @@ MonoBehaviour:
     Id: 5b3bc1fa-b360-416c-8489-3a3eb8f2ccae
   - gameObject: {fileID: 910268685}
     Id: 3f01dc86-fdde-4318-93f3-02ec6a43d5fc
+  - gameObject: {fileID: 1921984674}
+    Id: 24e8fa7d-1d3e-4226-a273-fb443ea9e18a

@@ -52,10 +52,14 @@ public class CameraController : MonoBehaviour {
 
         foreach(GameObject wall in Ground)
         {
-            Vector3 screenPoint = 
-                cam.WorldToViewportPoint(wall.transform.position);
-            groundSeen = screenPoint.z > 0 && screenPoint.x > 0 && 
-                screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
+            // Vector3 screenPoint = 
+            //     cam.WorldToViewportPoint(wall.transform.position);
+            // groundSeen = screenPoint.z > 0 && screenPoint.x > 0 && 
+            //     screenPoint.x < 1 && screenPoint.y > 0 && screenPoint.y < 1;
+            // Plane[] planes = GeometryUtility.CalculateFrustumPlanes(cam);
+            // groundSeen = 
+            // GeometryUtility.TestPlanesAABB(planes , GetComponent<Collider>().bounds);
+            groundSeen = isVisible(wall);
             if(groundSeen) break;
         }
 
@@ -77,5 +81,10 @@ public class CameraController : MonoBehaviour {
         else pos.y = transform.position.y;
 
         transform.position = pos;
+    }
+
+    bool isVisible(GameObject obj)
+    {
+        return obj.GetComponent<Renderer>().isVisible;
     }
 }

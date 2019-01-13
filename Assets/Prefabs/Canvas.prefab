@@ -387,6 +387,7 @@ GameObject:
   - component: {fileID: 224737949818591650}
   - component: {fileID: 222162131065371410}
   - component: {fileID: 114084677351461570}
+  - component: {fileID: 114891374194479782}
   m_Layer: 0
   m_Name: HealthText
   m_TagString: Untagged
@@ -3450,6 +3451,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ee7557e9fd8b4aa2948306c7ba8b349, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114891374194479782
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1638872678671154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd6fd92df3c974ed690d61989eb183ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsDeserializing: 0
+  _id: 24e8fa7d-1d3e-4226-a273-fb443ea9e18a
+  classId: 248a1748-5324-4f5a-b834-488299509681
+  StoreAllComponents: 0
+  Components:
+  - TMPro.TextMeshProUGUI
 --- !u!114 &114893046541575192
 MonoBehaviour:
   m_ObjectHideFlags: 1

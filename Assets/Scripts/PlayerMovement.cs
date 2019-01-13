@@ -86,7 +86,7 @@ public class PlayerMovement : MonoBehaviour {
 
 	public void Jump()
 	{
+		if(controller.m_Grounded) animator.SetBool("IsJumping", true);
 		controller.Move(0, crouch, true);
-		animator.SetBool("IsJumping", true);
 	}
 }
